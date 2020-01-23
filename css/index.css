@@ -231,6 +231,9 @@ nav ul a {
   font-size: 1.6rem;
   padding: 20px;
 }
+body {
+  overflow-x: hidden;
+}
 @media (max-width: 500px) {
   body {
     overflow-x: hidden;
