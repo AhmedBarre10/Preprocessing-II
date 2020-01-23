@@ -1,1 +1,17 @@
 // Mixins in here
+
+.button(@color:yellow, @color2:white, @font:15px, @curve:1px, @padding:5px){
+    font-size: @font;
+    padding: @padding;
+    background-color:@color;
+    color: @color2;
+    border-radius:@curve;
+    text-align: center;
+    position: relative;
+    right: 1px;
+}
+
+.btn{
+    .button(darkcyan, white, 20px, 15px, 10px) 
+
+}

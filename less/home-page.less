@@ -1,3 +1,10 @@
+
+@media @mobile {
+body{
+  overflow-x:hidden;
+
+}
+}
 .home {
 
   .content-section {
@@ -5,15 +12,61 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile{
+    display:flex;
+    flex-direction: column ;
+    }
 
    
+   }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile{
+     width: 100%;
+     position: relative;
+     left: 8%;
+
+      }
+    }
+
+    .text-content2 {
+      width: 48%;
+      padding-right: 1%;
+      @media @mobile{
+     width: 90%;
+     position: relative;
+     left: 8%;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+
+      }
+      .texwrap{
+
+      @media @mobile{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      }
+    }
+    .funn{
+      @media @mobile {
+      position: relative;
+      left: 10%;
+      width: 80%;
+      bottom: 30px;
+      
+      }
     }
 
     .img-content {
+      @media @mobile{
+        width: 100%;
+        position: relative;
+        left: 8%;
+      }
       width: 48%;
       padding-left: 1%;
 
@@ -21,6 +74,9 @@
         border-radius: 10px;
       }
     }
+  }
+  h2{
+    padding-top: 10px;
   }
 
   .inverse-content {
@@ -41,10 +97,62 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile{
+      position: relative;
+      left: 3%;
+      display: flex;
+      width: 90%;
+      flex-direction: column;
+    }
+  }
+    .words{
+      position: relative;
+      left: 120%;
+      bottom: 300px;
+      line-height: 1.5;
+      
+      @media @mobile{
+        display:flex;
+        flex-direction: column;
+
+        position: relative;
+        top: 29px;;
+      }
+
+
+
+    }
+    .adv{
+      position: relative;
+      left: 120%;
+      bottom: 300px;
+      line-height: 1.5;
+
+    }
+
+    .wrapii{
+      
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+      bottom: 140px;
+      justify-content:space-around;
+      @media @mobile{
+        position: relative;
+        left: 4%;
+        display: flex;
+        flex-direction: column;
+        
+      }
+    }
 
     img {
       border-radius: 10px;
     }
+  .content-destination{
+    position: relative;
+      bottom: 200px;
+
   }
 
   .content-pick {
@@ -52,10 +160,17 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      
+      @media @mobile{
+
+        width: 80%;
+        position: relative;
+        left: 10%;
+      }
     }
   }
-}// home
